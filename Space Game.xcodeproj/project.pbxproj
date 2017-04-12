@@ -15,6 +15,11 @@
 		F891FACF1E9B5A46003FB394 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891FACD1E9B5A46003FB394 /* Main.storyboard */; };
 		F891FAD11E9B5A46003FB394 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F891FAD01E9B5A46003FB394 /* Assets.xcassets */; };
 		F891FAD41E9B5A46003FB394 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F891FAD21E9B5A46003FB394 /* LaunchScreen.storyboard */; };
+		F891FADD1E9B5A8D003FB394 /* explosion.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F891FADB1E9B5A8D003FB394 /* explosion.mp3 */; };
+		F891FADE1E9B5A8D003FB394 /* torpedo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F891FADC1E9B5A8D003FB394 /* torpedo.mp3 */; };
+		F891FAE31E9B5BE3003FB394 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = F891FAE11E9B5BE3003FB394 /* Explosion.sks */; };
+		F891FAE41E9B5BE3003FB394 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = F891FAE21E9B5BE3003FB394 /* Starfield.sks */; };
+		F891FAE61E9B67AA003FB394 /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = F891FAE51E9B67AA003FB394 /* GameElements.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		F891FAD01E9B5A46003FB394 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F891FAD31E9B5A46003FB394 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F891FAD51E9B5A46003FB394 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F891FADB1E9B5A8D003FB394 /* explosion.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = explosion.mp3; sourceTree = "<group>"; };
+		F891FADC1E9B5A8D003FB394 /* torpedo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = torpedo.mp3; sourceTree = "<group>"; };
+		F891FAE11E9B5BE3003FB394 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		F891FAE21E9B5BE3003FB394 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
+		F891FAE51E9B67AA003FB394 /* GameElements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +74,14 @@
 				F891FAC51E9B5A46003FB394 /* GameScene.sks */,
 				F891FAC71E9B5A46003FB394 /* Actions.sks */,
 				F891FAC91E9B5A46003FB394 /* GameScene.swift */,
+				F891FAE51E9B67AA003FB394 /* GameElements.swift */,
 				F891FACB1E9B5A46003FB394 /* GameViewController.swift */,
+				F891FAE11E9B5BE3003FB394 /* Explosion.sks */,
+				F891FAE21E9B5BE3003FB394 /* Starfield.sks */,
 				F891FACD1E9B5A46003FB394 /* Main.storyboard */,
 				F891FAD01E9B5A46003FB394 /* Assets.xcassets */,
+				F891FADB1E9B5A8D003FB394 /* explosion.mp3 */,
+				F891FADC1E9B5A8D003FB394 /* torpedo.mp3 */,
 				F891FAD21E9B5A46003FB394 /* LaunchScreen.storyboard */,
 				F891FAD51E9B5A46003FB394 /* Info.plist */,
 			);
@@ -133,9 +148,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F891FADE1E9B5A8D003FB394 /* torpedo.mp3 in Resources */,
+				F891FADD1E9B5A8D003FB394 /* explosion.mp3 in Resources */,
 				F891FACF1E9B5A46003FB394 /* Main.storyboard in Resources */,
 				F891FAC61E9B5A46003FB394 /* GameScene.sks in Resources */,
 				F891FAD11E9B5A46003FB394 /* Assets.xcassets in Resources */,
+				F891FAE31E9B5BE3003FB394 /* Explosion.sks in Resources */,
+				F891FAE41E9B5BE3003FB394 /* Starfield.sks in Resources */,
 				F891FAD41E9B5A46003FB394 /* LaunchScreen.storyboard in Resources */,
 				F891FAC81E9B5A46003FB394 /* Actions.sks in Resources */,
 			);
@@ -148,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F891FAE61E9B67AA003FB394 /* GameElements.swift in Sources */,
 				F891FACA1E9B5A46003FB394 /* GameScene.swift in Sources */,
 				F891FACC1E9B5A46003FB394 /* GameViewController.swift in Sources */,
 				F891FAC41E9B5A46003FB394 /* AppDelegate.swift in Sources */,
@@ -316,6 +336,7 @@
 				F891FADA1E9B5A46003FB394 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
